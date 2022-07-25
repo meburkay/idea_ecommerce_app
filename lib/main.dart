@@ -1,4 +1,4 @@
-//todo YAPILACAK SAYFALAR
+//TODO YAPILACAK SAYFALAR
 /*KullaniciAnaSayfaView -->     Emre +
 KullaniciFavorilerView -->    Emre   +
 AramaView -->            Emre

@@ -1,0 +1,169 @@
+Date : 2022-07-24 09:31:00
+Directory : d:\flutterprojects\idea_ecommerce_app
+Total : 103 files,  6279 codes, 570 comments, 756 blanks, all 7605 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| Dart       |         67 |      5,269 |        329 |        533 |      6,131 |
+| C++        |         11 |        405 |         80 |        132 |        617 |
+| JSON       |          5 |        234 |          0 |          3 |        237 |
+| XML        |          9 |        123 |         48 |         11 |        182 |
+| Groovy     |          3 |         92 |          5 |         22 |        119 |
+| HTML       |          1 |         83 |         18 |         12 |        113 |
+| YAML       |          2 |         40 |         89 |         30 |        159 |
+| Markdown   |          2 |         13 |          0 |          9 |         22 |
+| Swift      |          1 |         12 |          0 |          2 |         14 |
+| Properties |          2 |          8 |          1 |          2 |         11 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++-----------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                | files      | code       | comment    | blank      | total      |
++-----------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                   |        103 |      6,279 |        570 |        756 |      7,605 |
+| android                                                                                             |         13 |        209 |         52 |         33 |        294 |
+| android\app                                                                                         |          9 |        165 |         51 |         22 |        238 |
+| android\app\src                                                                                     |          7 |         62 |         46 |          9 |        117 |
+| android\app\src\debug                                                                               |          1 |          4 |          4 |          1 |          9 |
+| android\app\src\main                                                                                |          5 |         54 |         38 |          7 |         99 |
+| android\app\src\main\res                                                                            |          4 |         26 |         32 |          6 |         64 |
+| android\app\src\main\res\drawable                                                                   |          1 |          4 |          7 |          2 |         13 |
+| android\app\src\main\res\drawable-v21                                                               |          1 |          4 |          7 |          2 |         13 |
+| android\app\src\main\res\values                                                                     |          1 |          9 |          9 |          1 |         19 |
+| android\app\src\main\res\values-night                                                               |          1 |          9 |          9 |          1 |         19 |
+| android\app\src\profile                                                                             |          1 |          4 |          4 |          1 |          9 |
+| android\gradle                                                                                      |          1 |          5 |          1 |          1 |          7 |
+| android\gradle\wrapper                                                                              |          1 |          5 |          1 |          1 |          7 |
+| ios                                                                                                 |          8 |        229 |          2 |          9 |        240 |
+| ios\Runner                                                                                          |          7 |        222 |          2 |          9 |        233 |
+| ios\Runner\Assets.xcassets                                                                          |          3 |        148 |          0 |          4 |        152 |
+| ios\Runner\Assets.xcassets\AppIcon.appiconset                                                       |          1 |        122 |          0 |          1 |        123 |
+| ios\Runner\Assets.xcassets\LaunchImage.imageset                                                     |          2 |         26 |          0 |          3 |         29 |
+| ios\Runner\Base.lproj                                                                               |          2 |         61 |          2 |          2 |         65 |
+| lib                                                                                                 |         66 |      5,255 |        319 |        526 |      6,100 |
+| lib\app_constants                                                                                   |          1 |         19 |          6 |          1 |         26 |
+| lib\models                                                                                          |         11 |        374 |         46 |         64 |        484 |
+| lib\providers                                                                                       |          6 |        225 |          0 |         50 |        275 |
+| lib\screens                                                                                         |         35 |      4,178 |        186 |        327 |      4,691 |
+| lib\screens\musteri                                                                                 |         34 |      3,937 |        167 |        318 |      4,422 |
+| lib\services                                                                                        |          3 |        125 |         53 |         36 |        214 |
+| lib\utilities                                                                                       |          1 |          9 |          0 |          2 |         11 |
+| lib\widgets                                                                                         |          7 |        182 |          2 |         29 |        213 |
+| test                                                                                                |          1 |         14 |         10 |          7 |         31 |
+| web                                                                                                 |          2 |        118 |         18 |         13 |        149 |
+| windows                                                                                             |         10 |        404 |         80 |        131 |        615 |
+| windows\flutter                                                                                     |          2 |          8 |          9 |         11 |         28 |
+| windows\runner                                                                                      |          8 |        396 |         71 |        120 |        587 |
++-----------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++-----------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                                                                            | language   | code       | comment    | blank      | total      |
++-----------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| d:\flutterprojects\idea_ecommerce_app\README.md                                                     | Markdown   |         10 |          0 |          7 |         17 |
+| d:\flutterprojects\idea_ecommerce_app\analysis_options.yaml                                         | YAML       |          2 |         24 |          4 |         30 |
+| d:\flutterprojects\idea_ecommerce_app\android\app\build.gradle                                      | Groovy     |         56 |          5 |         13 |         74 |
+| d:\flutterprojects\idea_ecommerce_app\android\app\google-services.json                              | JSON       |         47 |          0 |          0 |         47 |
+| d:\flutterprojects\idea_ecommerce_app\android\app\src\debug\AndroidManifest.xml                     | XML        |          4 |          4 |          1 |          9 |
+| d:\flutterprojects\idea_ecommerce_app\android\app\src\main\AndroidManifest.xml                      | XML        |         28 |          6 |          1 |         35 |
+| d:\flutterprojects\idea_ecommerce_app\android\app\src\main\res\drawable-v21\launch_background.xml   | XML        |          4 |          7 |          2 |         13 |
+| d:\flutterprojects\idea_ecommerce_app\android\app\src\main\res\drawable\launch_background.xml       | XML        |          4 |          7 |          2 |         13 |
+| d:\flutterprojects\idea_ecommerce_app\android\app\src\main\res\values-night\styles.xml              | XML        |          9 |          9 |          1 |         19 |
+| d:\flutterprojects\idea_ecommerce_app\android\app\src\main\res\values\styles.xml                    | XML        |          9 |          9 |          1 |         19 |
+| d:\flutterprojects\idea_ecommerce_app\android\app\src\profile\AndroidManifest.xml                   | XML        |          4 |          4 |          1 |          9 |
+| d:\flutterprojects\idea_ecommerce_app\android\build.gradle                                          | Groovy     |         28 |          0 |          5 |         33 |
+| d:\flutterprojects\idea_ecommerce_app\android\gradle.properties                                     | Properties |          3 |          0 |          1 |          4 |
+| d:\flutterprojects\idea_ecommerce_app\android\gradle\wrapper\gradle-wrapper.properties              | Properties |          5 |          1 |          1 |          7 |
+| d:\flutterprojects\idea_ecommerce_app\android\settings.gradle                                       | Groovy     |          8 |          0 |          4 |         12 |
+| d:\flutterprojects\idea_ecommerce_app\ios\Runner\AppDelegate.swift                                  | Swift      |         12 |          0 |          2 |         14 |
+| d:\flutterprojects\idea_ecommerce_app\ios\Runner\Assets.xcassets\AppIcon.appiconset\Contents.json   | JSON       |        122 |          0 |          1 |        123 |
+| d:\flutterprojects\idea_ecommerce_app\ios\Runner\Assets.xcassets\LaunchImage.imageset\Contents.json | JSON       |         23 |          0 |          1 |         24 |
+| d:\flutterprojects\idea_ecommerce_app\ios\Runner\Assets.xcassets\LaunchImage.imageset\README.md     | Markdown   |          3 |          0 |          2 |          5 |
+| d:\flutterprojects\idea_ecommerce_app\ios\Runner\Base.lproj\LaunchScreen.storyboard                 | XML        |         36 |          1 |          1 |         38 |
+| d:\flutterprojects\idea_ecommerce_app\ios\Runner\Base.lproj\Main.storyboard                         | XML        |         25 |          1 |          1 |         27 |
+| d:\flutterprojects\idea_ecommerce_app\ios\Runner\Runner-Bridging-Header.h                           | C++        |          1 |          0 |          1 |          2 |
+| d:\flutterprojects\idea_ecommerce_app\ios\firebase_app_id_file.json                                 | JSON       |          7 |          0 |          0 |          7 |
+| d:\flutterprojects\idea_ecommerce_app\lib\app_constants\app_strings.dart                            | Dart       |         19 |          6 |          1 |         26 |
+| d:\flutterprojects\idea_ecommerce_app\lib\firebase_options.dart                                     | Dart       |         60 |         12 |          5 |         77 |
+| d:\flutterprojects\idea_ecommerce_app\lib\main.dart                                                 | Dart       |         83 |         14 |         12 |        109 |
+| d:\flutterprojects\idea_ecommerce_app\lib\models\admin.dart                                         | Dart       |         18 |          0 |          4 |         22 |
+| d:\flutterprojects\idea_ecommerce_app\lib\models\adres.dart                                         | Dart       |         46 |          0 |          4 |         50 |
+| d:\flutterprojects\idea_ecommerce_app\lib\models\degerlendirme.dart                                 | Dart       |         30 |          1 |          6 |         37 |
+| d:\flutterprojects\idea_ecommerce_app\lib\models\kampanya.dart                                      | Dart       |         22 |          0 |          4 |         26 |
+| d:\flutterprojects\idea_ecommerce_app\lib\models\kayitliKart.dart                                   | Dart       |         26 |          1 |          5 |         32 |
+| d:\flutterprojects\idea_ecommerce_app\lib\models\musteri.dart                                       | Dart       |         78 |         39 |         12 |        129 |
+| d:\flutterprojects\idea_ecommerce_app\lib\models\satici.dart                                        | Dart       |         32 |          0 |          5 |         37 |
+| d:\flutterprojects\idea_ecommerce_app\lib\models\sikayet.dart                                       | Dart       |         20 |          0 |          5 |         25 |
+| d:\flutterprojects\idea_ecommerce_app\lib\models\siparis.dart                                       | Dart       |         28 |          0 |          7 |         35 |
+| d:\flutterprojects\idea_ecommerce_app\lib\models\soru.dart                                          | Dart       |         14 |          1 |          6 |         21 |
+| d:\flutterprojects\idea_ecommerce_app\lib\models\urun.dart                                          | Dart       |         60 |          4 |          6 |         70 |
+| d:\flutterprojects\idea_ecommerce_app\lib\providers\adreslerim_provider.dart                        | Dart       |         22 |          0 |          8 |         30 |
+| d:\flutterprojects\idea_ecommerce_app\lib\providers\basket_provider.dart                            | Dart       |         53 |          0 |          9 |         62 |
+| d:\flutterprojects\idea_ecommerce_app\lib\providers\category_provider.dart                          | Dart       |         26 |          0 |          7 |         33 |
+| d:\flutterprojects\idea_ecommerce_app\lib\providers\favoriler_provider.dart                         | Dart       |         49 |          0 |         12 |         61 |
+| d:\flutterprojects\idea_ecommerce_app\lib\providers\urun_ozellikleri_provider.dart                  | Dart       |         29 |          0 |         10 |         39 |
+| d:\flutterprojects\idea_ecommerce_app\lib\providers\yeni_adres_olustur_provider.dart                | Dart       |         46 |          0 |          4 |         50 |
+| d:\flutterprojects\idea_ecommerce_app\lib\screens\musteri\adreslerim.dart                           | Dart       |         93 |          0 |          7 |        100 |
+| d:\flutterprojects\idea_ecommerce_app\lib\screens\musteri\anaSayfa_view.dart                        | Dart       |        156 |          6 |         18 |        180 |
+| d:\flutterprojects\idea_ecommerce_app\lib\screens\musteri\anaSayfa_view_model.dart                  | Dart       |         35 |          9 |         13 |         57 |
+| d:\flutterprojects\idea_ecommerce_app\lib\screens\musteri\arama_view.dart                           | Dart       |        118 |          2 |         16 |        136 |
+| d:\flutterprojects\idea_ecommerce_app\lib\screens\musteri\arama_view_model.dart                     | Dart       |         21 |          0 |         10 |         31 |
+| d:\flutterprojects\idea_ecommerce_app\lib\screens\musteri\degerlendirilenler_view.dart              | Dart       |         64 |          4 |          3 |         71 |
+| d:\flutterprojects\idea_ecommerce_app\lib\screens\musteri\degerlendirmeBekleyenler_view.dart        | Dart       |         90 |          4 |          3 |         97 |
+| d:\flutterprojects\idea_ecommerce_app\lib\screens\musteri\favoriler_view.dart                       | Dart       |         80 |          2 |          9 |         91 |
+| d:\flutterprojects\idea_ecommerce_app\lib\screens\musteri\hesap_view.dart                           | Dart       |        102 |         18 |          4 |        124 |
+| d:\flutterprojects\idea_ecommerce_app\lib\screens\musteri\hesap_view_model.dart                     | Dart       |          0 |          0 |          1 |          1 |
+| d:\flutterprojects\idea_ecommerce_app\lib\screens\musteri\kartekle.dart                             | Dart       |        237 |          0 |         16 |        253 |
+| d:\flutterprojects\idea_ecommerce_app\lib\screens\musteri\kategoriSecilen.dart                      | Dart       |        514 |          3 |         30 |        547 |
+| d:\flutterprojects\idea_ecommerce_app\lib\screens\musteri\kategoriler_view.dart                     | Dart       |         77 |          1 |          9 |         87 |
+| d:\flutterprojects\idea_ecommerce_app\lib\screens\musteri\kategoriler_view_model.dart               | Dart       |          0 |          0 |          1 |          1 |
+| d:\flutterprojects\idea_ecommerce_app\lib\screens\musteri\kayitlikartlarim.dart                     | Dart       |        260 |          0 |         20 |        280 |
+| d:\flutterprojects\idea_ecommerce_app\lib\screens\musteri\kullanicisepet.dart                       | Dart       |        222 |          0 |         22 |        244 |
+| d:\flutterprojects\idea_ecommerce_app\lib\screens\musteri\kullanicisepet_View_Model.dart            | Dart       |         18 |          4 |          7 |         29 |
+| d:\flutterprojects\idea_ecommerce_app\lib\screens\musteri\musteri_hesap_olusturma_view.dart         | Dart       |        376 |          4 |         20 |        400 |
+| d:\flutterprojects\idea_ecommerce_app\lib\screens\musteri\musteri_hesap_resetleme_view.dart         | Dart       |        123 |          0 |         10 |        133 |
+| d:\flutterprojects\idea_ecommerce_app\lib\screens\musteri\my_home_page.dart                         | Dart       |        100 |          3 |         13 |        116 |
+| d:\flutterprojects\idea_ecommerce_app\lib\screens\musteri\productsInCategoryView.dart               | Dart       |         84 |          1 |          9 |         94 |
+| d:\flutterprojects\idea_ecommerce_app\lib\screens\musteri\satinAlma_view.dart                       | Dart       |        170 |          3 |          4 |        177 |
+| d:\flutterprojects\idea_ecommerce_app\lib\screens\musteri\satinAlma_view_model.dart                 | Dart       |          0 |          0 |          1 |          1 |
+| d:\flutterprojects\idea_ecommerce_app\lib\screens\musteri\sikayet.dart                              | Dart       |         55 |          0 |          8 |         63 |
+| d:\flutterprojects\idea_ecommerce_app\lib\screens\musteri\siparislerim.dart                         | Dart       |        230 |          0 |         12 |        242 |
+| d:\flutterprojects\idea_ecommerce_app\lib\screens\musteri\urun_ekrani_view.dart                     | Dart       |        194 |          5 |         15 |        214 |
+| d:\flutterprojects\idea_ecommerce_app\lib\screens\musteri\urun_ozellikleri.dart                     | Dart       |         46 |          0 |          6 |         52 |
+| d:\flutterprojects\idea_ecommerce_app\lib\screens\musteri\urun_ozellikleri_1.dart                   | Dart       |         26 |          0 |          6 |         32 |
+| d:\flutterprojects\idea_ecommerce_app\lib\screens\musteri\urun_ozellikleri_2.dart                   | Dart       |         26 |          0 |          6 |         32 |
+| d:\flutterprojects\idea_ecommerce_app\lib\screens\musteri\urun_ozellikleri_3.dart                   | Dart       |         18 |          0 |          4 |         22 |
+| d:\flutterprojects\idea_ecommerce_app\lib\screens\musteri\yeni_adres_olustur.dart                   | Dart       |        174 |          4 |          6 |        184 |
+| d:\flutterprojects\idea_ecommerce_app\lib\screens\musteri\yorum_yapma_view.dart                     | Dart       |        136 |          6 |          3 |        145 |
+| d:\flutterprojects\idea_ecommerce_app\lib\screens\musteri\yorumlar_view.dart                        | Dart       |         92 |         88 |          5 |        185 |
+| d:\flutterprojects\idea_ecommerce_app\lib\screens\musteri\yorumlar_view_model.dart                  | Dart       |          0 |          0 |          1 |          1 |
+| d:\flutterprojects\idea_ecommerce_app\lib\screens\sign_in.dart                                      | Dart       |        241 |         19 |          9 |        269 |
+| d:\flutterprojects\idea_ecommerce_app\lib\services\auth.dart                                        | Dart       |         35 |         35 |          9 |         79 |
+| d:\flutterprojects\idea_ecommerce_app\lib\services\calculator.dart                                  | Dart       |         15 |          6 |          5 |         26 |
+| d:\flutterprojects\idea_ecommerce_app\lib\services\database.dart                                    | Dart       |         75 |         12 |         22 |        109 |
+| d:\flutterprojects\idea_ecommerce_app\lib\utilities\route_helper.dart                               | Dart       |          9 |          0 |          2 |         11 |
+| d:\flutterprojects\idea_ecommerce_app\lib\widgets\add_basket_button.dart                            | Dart       |         24 |          0 |          5 |         29 |
+| d:\flutterprojects\idea_ecommerce_app\lib\widgets\loading_indicator.dart                            | Dart       |         19 |          0 |          3 |         22 |
+| d:\flutterprojects\idea_ecommerce_app\lib\widgets\my_text_form_field.dart                           | Dart       |         37 |          1 |          3 |         41 |
+| d:\flutterprojects\idea_ecommerce_app\lib\widgets\on_board.dart                                     | Dart       |         41 |          1 |          6 |         48 |
+| d:\flutterprojects\idea_ecommerce_app\lib\widgets\page_appbar_title.dart                            | Dart       |         15 |          0 |          3 |         18 |
+| d:\flutterprojects\idea_ecommerce_app\lib\widgets\product_container.dart                            | Dart       |         34 |          0 |          6 |         40 |
+| d:\flutterprojects\idea_ecommerce_app\lib\widgets\product_label_headline6.dart                      | Dart       |         12 |          0 |          3 |         15 |
+| d:\flutterprojects\idea_ecommerce_app\pubspec.yaml                                                  | YAML       |         38 |         65 |         26 |        129 |
+| d:\flutterprojects\idea_ecommerce_app\test\widget_test.dart                                         | Dart       |         14 |         10 |          7 |         31 |
+| d:\flutterprojects\idea_ecommerce_app\web\index.html                                                | HTML       |         83 |         18 |         12 |        113 |
+| d:\flutterprojects\idea_ecommerce_app\web\manifest.json                                             | JSON       |         35 |          0 |          1 |         36 |
+| d:\flutterprojects\idea_ecommerce_app\windows\flutter\generated_plugin_registrant.cc                | C++        |          3 |          4 |          5 |         12 |
+| d:\flutterprojects\idea_ecommerce_app\windows\flutter\generated_plugin_registrant.h                 | C++        |          5 |          5 |          6 |         16 |
+| d:\flutterprojects\idea_ecommerce_app\windows\runner\flutter_window.cpp                             | C++        |         45 |          4 |         13 |         62 |
+| d:\flutterprojects\idea_ecommerce_app\windows\runner\flutter_window.h                               | C++        |         20 |          5 |          9 |         34 |
+| d:\flutterprojects\idea_ecommerce_app\windows\runner\main.cpp                                       | C++        |         30 |          4 |         10 |         44 |
+| d:\flutterprojects\idea_ecommerce_app\windows\runner\resource.h                                     | C++        |          9 |          6 |          2 |         17 |
+| d:\flutterprojects\idea_ecommerce_app\windows\runner\utils.cpp                                      | C++        |         53 |          2 |         10 |         65 |
+| d:\flutterprojects\idea_ecommerce_app\windows\runner\utils.h                                        | C++        |          8 |          6 |          6 |         20 |
+| d:\flutterprojects\idea_ecommerce_app\windows\runner\win32_window.cpp                               | C++        |        183 |         15 |         48 |        246 |
+| d:\flutterprojects\idea_ecommerce_app\windows\runner\win32_window.h                                 | C++        |         48 |         29 |         22 |         99 |
+| Total                                                                                               |            |      6,279 |        570 |        756 |      7,605 |
++-----------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+

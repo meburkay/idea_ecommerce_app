@@ -110,7 +110,7 @@ class _urunEkraniState extends State<urunEkrani> {
       padding: const EdgeInsets.only(right: 10.0),
       child: GestureDetector(
           onTap: () {
-            //todo: satıcı ekranına gönderilecek
+            //TODO: satıcı ekranına gönderilecek
           },
           child: Text(
             widget.urun.satici,
@@ -125,7 +125,7 @@ class _urunEkraniState extends State<urunEkrani> {
   ElevatedButton askSellerButton() {
     return ElevatedButton(
       onPressed: () {
-        //todo: satıcıya soru sorma ekranına yönlendirielcek
+        //TODO: satıcıya soru sorma ekranına yönlendirielcek
       },
       child: Text('satıcıya sor'),
       style: ElevatedButton.styleFrom(primary: Colors.purple[400]),

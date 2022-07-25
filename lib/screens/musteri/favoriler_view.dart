@@ -29,7 +29,7 @@ class _FavorilerState extends State<Favoriler> {
   Widget _bodyView(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.all(12.0),
-      //todo Burada favori listesindeki ürünleri getirecek şekilde ayarlama yapıcaz. Ayrıca Bir de favori ürünü listeden çıkarmak için buton yapmak lazım.
+      //TODO Burada favori listesindeki ürünleri getirecek şekilde ayarlama yapıcaz. Ayrıca Bir de favori ürünü listeden çıkarmak için buton yapmak lazım.
       child: product_gridView(context)
     );
   }
@@ -72,7 +72,7 @@ class _FavorilerState extends State<Favoriler> {
     return Positioned(
       right: 5,
       child: IconButton(
-        //todo Burada kalp icon buttonına basıldığında sayfa yenilenecek ve o ürün kaldırılacak. Aynı zamanda müşterinin favori listesi de güncellenerek bahse konu ürün oradaki databaseden de silinerek güncellenecek.
+        //TODO Burada kalp icon buttonına basıldığında sayfa yenilenecek ve o ürün kaldırılacak. Aynı zamanda müşterinin favori listesi de güncellenerek bahse konu ürün oradaki databaseden de silinerek güncellenecek.
         onPressed: () async {
           await context.read<FavorilerProvider>().clickToUpdateFavorite(urun);
           await context.read<FavorilerProvider>().getFavorites();

@@ -1,6 +1,6 @@
-//todo Oğuz eğer bunu görüyorsan güncel halini indirmişsin demektir:)))22 07 2022 2330
+//TODO Oğuz eğer bunu görüyorsan güncel halini indirmişsin demektir:)))22 07 2022 2330
 
-//todo Urun açıklamaları, Urun Özellikleri
+//TODO Urun açıklamaları, Urun Özellikleri
 
 class Urun {
   final String id;
@@ -8,10 +8,10 @@ class Urun {
   final List<dynamic> kategori;
   final String marka;
   final int stokMiktari;
-  final String satici; //todo normalce seller tipinde sonra bakıcam
+  final String satici; //TODO normalce seller tipinde sonra bakıcam
   final int fiyat;
   final List<dynamic> urunResimleriUrl;
-  final double puanOrt;
+  final dynamic puanOrt;
   final String urunAciklamasi;
   final String urunOzellikleri;
   final String kategoriId;
@@ -59,7 +59,7 @@ class Urun {
         stokMiktari: map['stokMiktari'],
         satici: map['satici'],
         fiyat: map['fiyat'],
-        puanOrt: map['puanOrt'].toDouble(),
+        puanOrt: map['puanOrt'].toDouble,
         urunResimleriUrl: map['urunResimleriUrl'],
         urunAciklamasi: map['urunAciklamasi'],
         urunOzellikleri: map['urunOzellikleri'],

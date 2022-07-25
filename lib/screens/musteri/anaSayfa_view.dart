@@ -1,6 +1,6 @@
-//todo Son gezilen ürünler tamam. Diğer ikisi genel ürünleri çekiyor üzerlerinde oynama yapabilirim.
-//todo SepeteEkle tuşunu aktive etmem lazım.
-//todo Reklam panosunu halletmem lazım.
+//TODO Son gezilen ürünler tamam. Diğer ikisi genel ürünleri çekiyor üzerlerinde oynama yapabilirim.
+//TODO SepeteEkle tuşunu aktive etmem lazım.
+//TODO Reklam panosunu halletmem lazım.
 import 'package:flutter/material.dart';
 import 'package:idea_ecommerce_app/app_constants/app_strings.dart';
 import 'package:idea_ecommerce_app/models/urun.dart';
@@ -61,7 +61,7 @@ class AnaSayfa extends StatelessWidget {
             SizedBox(height: 20),
             sectionTitle(text: populerUrunlerText),
             SizedBox(height: 10),
-            //todo Buradaki futurebuilder şu an için databasedeki bütün ürünlerin bilgisini çekiyor. Normalde popüler ürünleri bir şekilde belirleyip onları çekmesi lazım. Alt taraftakilerde de son gezilen ürünler veya sizin için seçtiklerimiz tarzı listelerden seçmesi lazım.
+            //TODO Buradaki futurebuilder şu an için databasedeki bütün ürünlerin bilgisini çekiyor. Normalde popüler ürünleri bir şekilde belirleyip onları çekmesi lazım. Alt taraftakilerde de son gezilen ürünler veya sizin için seçtiklerimiz tarzı listelerden seçmesi lazım.
             //*Providerın farklı bir kullanım formatını kullandık aşağıda.
             productFutureBuilder(
                 context: context,
@@ -108,7 +108,7 @@ class AnaSayfa extends StatelessWidget {
         width: MediaQuery.of(context).size.width * 0.9,
         height: MediaQuery.of(context).size.height * 0.20,
         decoration: BoxDecoration(
-          //todo Burada reklam panosuna geçici bir resim ekledim url koyarak. Normalde adminler tarafından belirlenen kampanyaların resimlerini koyucaz ve gesturededector ile farklı resimlere geçmelerini veya tıklayarak ilgili kampanya ürünlerini görmelerini sağlayacağız.
+          //TODO Burada reklam panosuna geçici bir resim ekledim url koyarak. Normalde adminler tarafından belirlenen kampanyaların resimlerini koyucaz ve gesturededector ile farklı resimlere geçmelerini veya tıklayarak ilgili kampanya ürünlerini görmelerini sağlayacağız.
           image: DecorationImage(
               image: NetworkImage('$imageUrl'), fit: BoxFit.fill),
           borderRadius: BorderRadius.circular(20),
@@ -170,7 +170,7 @@ class AnaSayfa extends StatelessWidget {
         ),
         ProductLabelHeadline6(text: "${snapshot.data?[index].fiyat.toString()} TL"),
         Text(snapshot.data?[index].isim ?? '', style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold)),
-        Expanded(child: AddBasketButton(urun: snapshot.data![index],)),
+        AddBasketButton(urun: snapshot.data![index],),
       ],
     );
   }

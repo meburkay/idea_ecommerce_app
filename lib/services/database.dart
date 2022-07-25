@@ -79,7 +79,7 @@ class Database {
       {required String path, required List urun}) async {
     var data = await _firestore
         .collection(path);
-        //.where('id', whereIn: urun); //todo: asdas
+        //.where('id', whereIn: urun); //TODO: asdas
 
     return data.get();
   }
