@@ -18,20 +18,19 @@ import 'anaSayfa_view_model.dart';
 import 'package:provider/provider.dart';
 
 class AnaSayfa extends StatelessWidget {
-  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         leading: SizedBox.shrink(),
         title: PageAppBarTitle(text: homePageAppTitle),
-        actions: [ logOutButton(context), ],
-
+        actions: [
+          logOutButton(context),
+        ],
       ),
       body: _bodyView(context),
     );
   }
-
 
   IconButton logOutButton(BuildContext context) {
     return IconButton(
@@ -100,7 +99,7 @@ class AnaSayfa extends StatelessWidget {
       ),
     );
   }
-      
+
   Widget reklamPanosu(
       {required BuildContext context, required String imageUrl}) {
     return Center(
@@ -130,14 +129,13 @@ class AnaSayfa extends StatelessWidget {
   FutureBuilder<List<Urun>> productFutureBuilder(
       {required BuildContext context, Future<List<Urun>>? future}) {
     return FutureBuilder<List<Urun>>(
-
-      future: future,
-      builder: (context, snapshot) {
-        if (snapshot.hasData) return productGridView(context, snapshot);
-        else return LoadingIndicator();
-      }
-    );
-
+        future: future,
+        builder: (context, snapshot) {
+          if (snapshot.hasData)
+            return productGridView(context, snapshot);
+          else
+            return LoadingIndicator();
+        });
   }
 
   SizedBox productGridView(
@@ -163,17 +161,22 @@ class AnaSayfa extends StatelessWidget {
     return Column(
       mainAxisSize: MainAxisSize.min,
       children: [
-
         ProductContainer(
-          onTap: () => RouteHelper.goRoute(context: context, page: urunEkrani(snapshot.data![index])), 
-          imageUrl: snapshot.data?[index].urunResimleriUrl[0]
+            onTap: () {
+              Provider.of<AnasayfaViewModel>(context,listen: false)
+                  .tiklananUrunVerisiKaydetme(snapshot.data![index].id);
+              RouteHelper.goRoute(
+                  context: context, page: urunEkrani(snapshot.data![index]));
+            },
+            imageUrl: snapshot.data?[index].urunResimleriUrl[0]),
+        ProductLabelHeadline6(
+            text: "${snapshot.data?[index].fiyat.toString()} TL"),
+        Text(snapshot.data?[index].isim ?? '',
+            style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold)),
+        AddBasketButton(
+          urun: snapshot.data![index],
         ),
-        ProductLabelHeadline6(text: "${snapshot.data?[index].fiyat.toString()} TL"),
-        Text(snapshot.data?[index].isim ?? '', style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold)),
-        AddBasketButton(urun: snapshot.data![index],),
       ],
     );
   }
-
 }
-

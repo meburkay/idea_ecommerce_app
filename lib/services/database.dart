@@ -5,7 +5,17 @@ import '../models/musteri.dart';
 class Database {
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
 
- 
+  tiklananUrunVerisiEkleme(String uid, String pid) async {
+    var musteriBilgisi = await _firestore
+        .collection('Customer')
+        .doc(uid)
+        .get()
+        .then((value) => value.data());
+    List tiklananUrunler = musteriBilgisi?['tiklananUrunler'];
+    tiklananUrunler.add(pid);
+    musteriBilgisi?['tiklananUrunler'] = tiklananUrunler;
+    _firestore.collection('Customer').doc(uid).set(musteriBilgisi!);
+  }
 
   sepeteUrunEkleme(String path, String docId, String uid) async {
     var musteriBilgisi = await _firestore
@@ -77,9 +87,7 @@ class Database {
 
   Future<QuerySnapshot<Map<String, dynamic>>> tiklananUrunVerisiOkuma(
       {required String path, required List urun}) async {
-    var data = await _firestore
-        .collection(path);
-        //.where('id', whereIn: urun); //TODO: asdas
+    var data = await _firestore.collection(path).where('id', whereIn: urun);
 
     return data.get();
   }

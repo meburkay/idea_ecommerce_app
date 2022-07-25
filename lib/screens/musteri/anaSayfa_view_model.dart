@@ -10,7 +10,12 @@ class AnasayfaViewModel extends ChangeNotifier {
   Database _database = Database();
   Auth _auth = Auth();
 
-sepeteUrunEkleme(String docId) async {
+  tiklananUrunVerisiKaydetme(String pid){
+    String? uid = _auth.onlineUser()?.uid;
+    _database.tiklananUrunVerisiEkleme(uid!, pid);
+  }
+
+  sepeteUrunEkleme(String docId) async {
     String? uid = await _auth.onlineUser()?.uid;
     _database.sepeteUrunEkleme('Customer', docId, uid!);
   }
@@ -23,13 +28,16 @@ sepeteUrunEkleme(String docId) async {
 
     //*HALLETTİM. burada databaseden çektiğim müşteri bilgilerini içeren mapi müşteriye çevirip onun üzerinden işlem yapacaktım ama hata vermiyor ama müşteri nesnesi de oluşmuyor çözemedim bir türlü. O yüzden şimdilik direk mapden aldığım bilgiyi kullanıyorum.
     Musteri musteriBilgisi = Musteri.fromMap(musteriBilgisiMap!);
+    if (musteriBilgisi.tiklananUrunler.isNotEmpty) {
+      var data = await _database.tiklananUrunVerisiOkuma(
+          path: 'Product', urun: musteriBilgisi.tiklananUrunler);
 
-    var data = await _database.tiklananUrunVerisiOkuma(
-        path: 'Product', urun: musteriBilgisi.tiklananUrunler);
-
-    List<Urun> docSnap = data.docs.map((e) => Urun.fromMap(e.data())).toList();
-    docSnap.shuffle();
-    return docSnap;
+      List<Urun> docSnap =
+          data.docs.map((e) => Urun.fromMap(e.data())).toList();
+      docSnap.shuffle();
+      return docSnap;
+    } else
+      return [];
   }
 
   veriEkleme() async {
