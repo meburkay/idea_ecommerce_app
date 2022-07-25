@@ -1,9 +1,24 @@
+import 'dart:developer';
+
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 import '../models/musteri.dart';
 
 class Database {
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
+
+  void gecmisBilgisiKaydetme(String uid, String gecmis) async {
+    var musteriBilgisi = await _firestore
+        .collection('Customer')
+        .doc(uid)
+        .get()
+        .then((value) => value.data());
+    List gecmisBilgisi = musteriBilgisi?['aramaGecmisi'];
+
+    gecmisBilgisi.insert(0, gecmis);
+    musteriBilgisi?['aramaGecmisi'] = gecmisBilgisi;
+    _firestore.collection('Customer').doc(uid).set(musteriBilgisi!);
+  }
 
   tiklananUrunVerisiEkleme(String uid, String pid) async {
     var musteriBilgisi = await _firestore
